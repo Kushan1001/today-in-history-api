@@ -44,12 +44,7 @@ def format_enteries():
     return date_list, title_list, content_list, image_path_list
 
 
-@app.get('/')
-def firstMessage():
-    return jsonify({"output": "Api is working properly"}), 200
-
-
-@app.post('/today-in-history')
+@app.get('/today-in-history')
 def today_in_hist_enteries():
     json_list = []
 
