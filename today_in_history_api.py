@@ -67,5 +67,3 @@ def today_in_hist_enteries():
 
     return jsonify({'output': json_list}), 200
 
-
-app.run(debug=True)
