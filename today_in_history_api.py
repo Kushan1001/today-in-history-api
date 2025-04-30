@@ -29,7 +29,7 @@ def format_enteries():
     content_list = []
     image_path_list = []
 
-    df = pd.read_excel('/home/kushan/ICP/suraj_work/apis/Today in history.xlsx')
+    df = pd.read_excel('Today in history.xlsx')
     filtered_df = df[df['Status'] != 'Done']
 
     for entry in filtered_df.iterrows():
